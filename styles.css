@@ -4,9 +4,11 @@
 /* Setting up the universal settings for the calculator.*/
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*<-- Sets font for whole page and backup font.*/
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Play', sans-serif;/*<-- Sets font for whole page and backup font.*/
     font-weight: normal;/* <-- Font is normal weight*/
-    color: rgba(26, 10, 83, 100);
+    font-size:smaller;
+    color: rgba(26, 10, 83,100);
 
 }
 
@@ -14,7 +16,7 @@
 body {
      padding: 0;/*<-- Zeroing out the default padding of the page*/
      margin: 0; /*<-- Zeroing out the default margins of the page*/
-     background: linear-gradient(to top, #055a21, #0066ff);/*<-- Creates a gradient effect in the background.*/
+     background: linear-gradient(to bottom, #ffffff, #0066ff);/*<-- Creates a gradient effect in the background.*/
 }
 
 /* Setting the grid template for the calculator buttons*/
@@ -30,10 +32,10 @@ body {
 .calculator-grid > button {
     cursor:pointer;
     font-size: 3rem;
-    border: 2px solid rgba(0, 0, 0, 0.096);
+    border: rem solid rgba(0, 0, 0);
     outline: none;
-    background-color: rgba(255,255,255,.75);
-    border-radius: 50%;
+    background-color: rgba(255,255,255,.50);
+    border-radius: 5%;
     margin: .25rem;
 
 }
@@ -48,12 +50,13 @@ background-color: rgba(255,255,255,.90);
 }
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0,0,0,.5);
+    border-radius:1%;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding:10px;
+    padding:1em;
     word-wrap: break-word;
     word-break: break-all;
     
